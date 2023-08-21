@@ -1,4 +1,15 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 3px;
+  align-items: center;
+  text-align: center;
+}
+
+#tabela div {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+#borda {
+  display: inline;
 }
