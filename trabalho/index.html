@@ -16,40 +16,42 @@
       <div>
         <label for="">Nome</label>
         <input placeholder="Digite seu nome" type="text" name="nome" id="nome">
+        <br>
       </div>
 
       <div>
         <label for="">Cel</label>
         <input placeholder="(xx) xxxxx-xxxx" type="number" name="celular" id="celular">
+        <br>
       </div>
   </form>
 
-  <button class="botao" type="submit"> Enviar </button>
+  <button class="botao" type="submit" onclick="cadastro()"> Enviar </button>
+  <br>
   </fieldset>
 
   <form id="tabela">
     <fieldset id="borda">
-      <div id="ident">
+      <div>
         <label for=""> ID </label>
-        <p id="id"> #01 </p>
+        <br>
+        <span id="ide"></span>
       </div>
 
-      <div id="nome">
+      <div>
         <label for=""> NOME </label>
-        <p> aoba </p>
+        <br>
+        <span> aa </span>
       </div>
 
-      <div id="celular">
+      <div>
         <label for=""> CELULAR </label>
-        <p> aoba </p>
+        <br>
+        <span> aa </span>
       </div>
     </fieldset>
     <button class="button" type="submit"> Deletar </button>
   </form>
-
-  <script>
-    var nome = 0;
-  </script>
 
 </body>
 
