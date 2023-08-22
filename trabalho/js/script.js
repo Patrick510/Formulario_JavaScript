@@ -1,12 +1,22 @@
 class Produto {
   constructor() {
-    this.id = 0;
-    this.nome = "";
-    this.celular = 0;
+    this.id = 1;
+    this.arrayProdutos = [];
   }
 
   enviar() {
-    alert("TESTE");
+    let produto = this.lerDados();
+
+    console.log(produto);
+  }
+
+  lerDados() {
+    let produto = {};
+
+    produto.id = this.id;
+    produto.nomeProduto = document.getElementById("nome").value;
+    produto.celularProd = document.getElementById("celular").value;
+    return produto;
   }
 
   deletar() {}
