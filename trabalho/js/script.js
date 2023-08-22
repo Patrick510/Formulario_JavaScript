@@ -7,7 +7,6 @@ class Produto {
   enviar() {
     let produto = this.lerDados();
     console.log(produto);
-    this.adicionar(produto);
   }
 
   adicionar() {
@@ -19,8 +18,8 @@ class Produto {
     let produto = {};
 
     produto.id = this.id;
-    produto.nomeProduto = document.getElementById("nome").value;
-    produto.celularProd = document.getElementById("celular").value;
+    produto.nomeProduto = document.getElementById("nome");
+    produto.celularProd = document.getElementById("celular");
     return produto;
   }
 
