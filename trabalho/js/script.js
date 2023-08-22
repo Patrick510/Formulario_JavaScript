@@ -6,8 +6,13 @@ class Produto {
 
   enviar() {
     let produto = this.lerDados();
-
     console.log(produto);
+    this.adicionar(produto);
+  }
+
+  adicionar() {
+    this.arrayProdutos.push(produto);
+    this.id++;
   }
 
   lerDados() {
