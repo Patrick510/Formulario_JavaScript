@@ -5,7 +5,7 @@ class Produto {
     this.celular = 0;
   }
 
-  adicionar() {
+  enviar() {
     alert("TESTE");
   }
 
