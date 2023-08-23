@@ -5,6 +5,10 @@ var arrayContatos = [];
 function enviar() {
   let produto = this.lerDados();
 
+  if (this.validar(produto) == true) {
+    this.adicionar(produto);
+  }
+
   this.listar();
   this.clearval();
 
@@ -25,7 +29,24 @@ function lerDados() {
   return produto;
 }
 //----------------------VALIDAÇÃO DOS INPUTS-----------------------
-function validar() {}
+function validar() {
+  const produto = lerDados();
+  let msg = "";
+  if (produto.nomeCont == "") {
+    msg += "- Informe nome do produto \n";
+  }
+
+  if (produto.fone == "") {
+    msg += "- Informe o celular \n";
+  }
+
+  if (msg != "") {
+    alert(msg);
+    return false;
+  }
+
+  return true;
+}
 //-------------------------LIMPAR OS INPUTS-------------------------
 function clearval() {}
 //------------------DELETA A LINHA DA TABELA-------------------------
