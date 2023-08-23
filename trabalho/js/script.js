@@ -15,9 +15,39 @@ function enviar() {
   console.log(produto);
 }
 //---------------------LISTAGEM--------------------------------
-function listar() {}
+function listar() {
+  //let
+  const tbody = document.getElementById("tbody");
+  tbody.innerText = "";
+
+  for (let i = 0; i < this.arrayContatos.length; i++) {
+    let tr = tbody.insertRow();
+
+    let td_id = tr.insertCell();
+    let td_nome1 = tr.insertCell();
+    let td_fone2 = tr.insertCell();
+    let td_botao = tr.insertCell();
+
+    td_id.innerText = this.arrayContatos[i].id;
+    td_nome1.innerText = this.arrayContatos[i].nomeCont;
+    td_fone2.innerText = this.arrayContatos[i].fone;
+    td_botao.innerHTML = `<button> Delete </button>`;
+    td_botao.setAttribute(
+      "onclick",
+      "deletar(" + this.arrayContatos[i].id + ")"
+    );
+
+    td_id.classList.add("center");
+    td_nome1.classList.add("center");
+    td_fone2.classList.add("center");
+    td_botao.classList.add("center");
+  }
+}
 //----------------------ADICIONANDO OS DADOS----------------------------
-function adicionar(produto) {}
+function adicionar(produto) {
+  this.arrayContatos.push(produto);
+  this.id++;
+}
 //---------------------LENDO OS DADOS--------------------------
 function lerDados() {
   let produto = {};
@@ -48,7 +78,10 @@ function validar() {
   return true;
 }
 //-------------------------LIMPAR OS INPUTS-------------------------
-function clearval() {}
+function clearval() {
+  document.getElementById("nome").value = "";
+  document.getElementById("fone").value = "";
+}
 //------------------DELETA A LINHA DA TABELA-------------------------
 function deletar(id) {}
 //-------------------------------------------------------------------
