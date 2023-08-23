@@ -2,7 +2,7 @@
 function inserirContato() {
   const contato = {
     nome: document.getElementById("nome").value,
-    fone: document.getElementById("celular").value,
+    fone: document.getElementById("fone").value,
   };
 
   const bd_contatos = getLocalStorage();
