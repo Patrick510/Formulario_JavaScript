@@ -1,4 +1,4 @@
-//------------------------------------------------------------
+//------------------------ENVIO DOS DADOS------------------------------------
 function inserirContato() {
   const contato = {
     nome: document.getElementById("nome").value,
