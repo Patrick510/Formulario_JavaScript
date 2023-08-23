@@ -43,26 +43,32 @@ button {
   margin-bottom: 5px;
 }
 
+button:hover {
+  background-color: #a1a1a1;
+}
+
 #tabela div {
   display: inline-block;
   border: 1px gray solid;
+  border-radius: 3px;
 }
 
 #tabela {
-  margin-top: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
 }
 
 table {
   border-collapse: collapse;
   border: 1px solid #ccc;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 table th {
   background-color: #d6d5d5;
 }
 
-tbody {
+.center {
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
