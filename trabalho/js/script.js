@@ -83,5 +83,15 @@ function clearval() {
   document.getElementById("fone").value = "";
 }
 //------------------DELETA A LINHA DA TABELA-------------------------
-function deletar(id) {}
-//-------------------------------------------------------------------
+function deletar(id) {
+  let tbody = document.getElementById("tbody");
+
+  for (let i = 0; i < this.arrayContatos.length; i++) {
+    if (this.arrayContatos[i].id == id) {
+      this.arrayContatos.splice(i, 1);
+      tbody.deleteRow(i);
+    }
+  }
+  console.log(this.arrayContatos);
+  //-------------------------------------------------------------------
+}
