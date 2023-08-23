@@ -26,12 +26,12 @@
       <br>
     </div>
 
-    <button class="botao" type="submit" onclick="enviar()"> Enviar </button>
+    <button class="botao" type="submit" onclick="inserirContato()"> Enviar </button>
   </div>
   </fieldset>
 
   <div id="tabela">
-    <table border="1">
+    <table id="tbContato" border="1">
       <thead>
         <th> ID </th>
         <th> NOME </th>
@@ -45,9 +45,7 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="material-symbols-outlined">
-              delete
-            </span>
+            <button onclick="deletarCont()"> Delete </button>
           </td>
         </tr>
       </tbody>

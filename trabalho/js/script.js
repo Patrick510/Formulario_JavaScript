@@ -46,4 +46,8 @@ function newRow(contato, index) {
       delete
     </span>
 `;
+
+  document.querySelector("#tbContato>tbody").appendChild(line);
 }
+//------------------------------------------------------------
+function deletarCont() {}
