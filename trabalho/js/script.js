@@ -25,6 +25,25 @@ function setLocalStorage(bd_contatos) {
 }
 
 //---------------------TABLE----------------------------------
-function updateTable() {}
+function updateTable() {
+  //clean table
+
+  const bd_contatos = getLocalStorage();
+
+  bd_contatos.forEach(newRow);
+}
 
 //------------------------------------------------------------
+function newRow(contato, index) {
+  const line = document.createElement("tr");
+
+  line.innerHTML = ` 
+  <td>${index}</td>
+  <td>${contato.nome}</td>
+  <td>${contato.fone}</td>
+  <td>
+    <span class="material-symbols-outlined">
+      delete
+    </span>
+`;
+}
