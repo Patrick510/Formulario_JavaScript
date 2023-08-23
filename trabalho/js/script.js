@@ -6,6 +6,7 @@ function inserirContato() {
   };
 
   const bd_contatos = getLocalStorage();
+  console.log(bd_contatos);
 
   bd_contatos.push(contato);
 
@@ -47,7 +48,7 @@ function newRow(contato, index) {
     </span>
 `;
 
-  document.querySelector("#tbContato>tbody").appendChild(line);
+  document.querySelector("#bdContato>tbody").appendChild(line);
 }
 //------------------------------------------------------------
-function deletarCont() {}
+function cleanTable() {}
