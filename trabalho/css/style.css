@@ -16,15 +16,31 @@ body {
   border-radius: 5px;
 }
 
-.input {
+.dados {
+  margin-top: 5px;
   display: grid;
+  margin-bottom: 5px;
 }
 
 input {
+  margin-top: 5px;
   padding: 5px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 3px;
   outline: 0;
+  padding: 10px;
+}
+
+button {
+  border: 0;
+  padding: 7px;
+  outline: 0;
+  background-color: #ccc;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: all ease 0.3s;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #tabela div {
